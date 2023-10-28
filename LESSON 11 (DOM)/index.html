@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<style>
+    body {
+        background: forestgreen;
+    }
+    .menu-item {
+        background-color: black;
+        color: white;
+    }
+    .menu-item.active {
+        background-color: brown;
+        color: white;
+    }
+    h1 {
+        font-size: 35px;
+        text-align: center;
+        font-weight: 900;
+    }
+    h1:nth-child(2) {
+        text-align: start;
+        color: aqua;
+    }
+    h1:nth-child(3) {
+        text-align: end;
+        color: peachpuff;
+        margin-right: 40px;
+    }
+    h2 {
+        font-size: 28px;
+        color: blueviolet;
+        text-align: start;
+    }
+    .go {
+        color: pink;
+        text-align: right;
+        font-size: 30px;
+
+    }
+    p {
+        text-align: center;
+        font-size: 28px;
+        color: paleturquoise;
+    }
+    button {
+        width: 87px;
+        height: 40px;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.8);
+        background: none;
+        border-left: 4px solid black;
+        cursor: pointer;
+        margin-top: 25px;
+    }
+    button:hover, button:active {
+        background: aqua;
+        color: #fff;
+        transition: .9s ease-in-out;
+        border-left: none;
+        opacity: 1;
+        border-right: 4px solid black;
+    }
+    span {
+        color: blue;
+    }
+</style>
+<body>
+    <ul class="subjects">
+        <li>Maths</li>
+        <li class="fav-subject">Biology</li>
+        <li>English</li>
+    </ul>
+    <!-- <ul class="section">
+        <li onmouseover="menuItemCLicked(this)" class="menu-item active">Menu 1</li>
+        <li onmouseover="menuItemCLicked(this)" class="menu-item">Menu 2</li>
+        <li onmouseover="menuItemCLicked(this)" class="menu-item">Menu 3</li>
+        <li onmouseover="menuItemCLicked(this)" class="menu-item">Menu 4</li>
+    </ul> -->
+    <button>submit</button>
+    <h1 class="heading">Understanding Document Object Model <span>(DOM)</span></h1>
+    <h1 id="heading1">Hey bro!</h1>
+    <h1 class="heading2">Go</h1>
+    <h2 class="text">hello</h2>
+    <h2 class="text go abc" id="headingText">hello</h2>
+    <p id="para">Wat xup</p>
+    <script src="app.js"></script>
+</body>
+</html>
